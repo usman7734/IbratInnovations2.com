@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="photos/header.png" type="image/x-icon">
+    <title>Morning Yoga</title>
+    <style>
+
+        nav{
+            background-color: white;
+            border: 1px solid black;
+            box-shadow: 5px 5px 5px  gray  ;
+            padding-top: 3vh;
+            padding-bottom: 3vh;
+            text-align: center;
+            }
+
+        nav img{
+            height: 10vh;
+            width: auto;
+            cursor: pointer;
+        }
+        nav li{
+            display: inline-block;
+            text-align: center;
+            padding-left: 5vw;
+        }
+        .icon{
+            display: inline-block;
+            width: 70%;
+        }
+        nav li img{
+            filter: grayscale(100%);
+        }
+        nav li img:hover{
+            filter: grayscale(1%);
+            transform: scale(1.25, 1.25);
+
+        }
+        nav span img{
+            filter: grayscale(100%);
+        }
+        nav span img:hover{
+            filter: grayscale(1%);
+            transform: scale(1.25,1.25);
+        }
+
+.image1{
+    display: inline-block;
+    height: 590px;
+    width: 350px;
+    background-image: url("photos/1.jpg");
+    background-position: -200px -10px;
+    background-repeat: no-repeat;
+    /* border: 2px solid red; */
+}
+
+.image2{
+    display: inline-block;
+    height: 590px;
+    width: 350px;
+    background-image: url("photos/girl2.jpeg");
+    background-position: -0px -100px;
+    background-repeat: no-repeat;
+    /* border: 2px solid red; */
+    margin-left: -10px;
+    margin-right: -10px;
+
+}
+
+.image3{
+    display: inline-block;
+    height: 590px;
+    width: 350px;
+    background-image: url("photos/girl.jpeg");
+    background-position: -0px -50px;
+    background-repeat: no-repeat;
+    /* border: 2px solid red; */
+}
+
+.onHover:hover{
+    width: 500px;
+    transition: 0.5s;
+}
+
+.onImageText{
+    font-size: 30px;
+    padding-left: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.onHover img{
+    height: 50px;
+    width: 50px;
+    margin-left: 30%;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.onHover img:hover{
+    filter: grayscale(1%);
+}
+
+.outerbox{
+    margin-left: 7vw;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1:hover{
+    color: blue;
+}
+
+
+/* ====================Media Query for less than 678px of width=============== */
+@media screen and (max-width:678px) {
+        nav img{
+            height: 5vh;
+            width: auto;
+        }       
+    }
+
+
+</style>
+</head>
+<body>
+    <nav>
+        <span class="logo"><img src="photos/logo.png" alt="Logo Images"></span>
+        <div class="icon">
+        <li><img src="photos/liveblue.png" alt="LIve Images"></li>
+        <li><img src="photos/membership.png" alt="membership Images"></li>
+        <li><img src="photos/plan.png" alt="plan Images"></li>
+        <li><img src="photos/mor.png" alt="More Images"></li>
+    </div>
+    
+        <span class="login"><img src="photos/login.png" alt="login images"></span>
+    </nav> 
+    <div class="outerbox">
+        <h1>Runner's Workout</h1>
+    <div class="image1 onHover"> <span class="onImageText">STRENGTH</span> <img src="photos/next.png" alt="Next Image"></div>
+    <div class="image2 onHover"> <span class="onImageText">MOBILITY</span> <img src="photos/next.png" alt="Next Image"></div>
+    <div class="image3 onHover"><span class="onImageText">DRILLS</span> <img src="photos/next.png" alt="Next Image"> </div>
+</div>
+
+</body>
+
+</html>
